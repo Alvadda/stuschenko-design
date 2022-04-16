@@ -1,0 +1,38 @@
+:root {
+  --color-background: #faf3f4;
+
+  --color-text-dark: #1d0e07;
+  --color-text-light: #fff;
+
+  --color-prime: #cf8083;
+  --color-prime-light: #f4cdce;
+
+  --font-size-xxl: 4rem;
+  --font-size-xl: 3.2rem;
+  --font-size-m: 2rem;
+
+  --font-weight-bold: 700;
+  --font-weight-semi-bold: 600;
+  --font-weight-regular: 400;
+
+  --boarder-radius: 4px;
+
+  --spacing-12: 12.8rem;
+  --spacing-11: 9.6rem;
+  --spacing-10: 8rem;
+  --spacing-9: 6.4rem;
+  --spacing-8: 4.8rem;
+  --spacing-7: 3.2rem;
+  --spacing-6: 2.4rem;
+  --spacing-5: 1.6rem;
+  --spacing-4: 1.2rem;
+  --spacing-3: 0.8rem;
+  --spacing-2: 0.4rem;
+  --spacing-1: 0.2rem;
+
+  --breakpoint-xl: 84em;
+  --breakpoint-l: 75em;
+  --breakpoint-m: 59em;
+  --breakpoint-s: 44em;
+  --breakpoint-xs: 34em;
+}
