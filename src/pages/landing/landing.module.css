@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 75.9rem 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   gap: var(--spacing-9);
 
@@ -9,7 +9,6 @@
 }
 
 .img {
-  width: 70rem;
   height: 58.3rem;
   background-color: #444;
 
