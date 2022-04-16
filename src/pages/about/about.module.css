@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--spacing-11);
+
+  /* height: calc(100vh - var(--spacing-12)); */
+  height: 100vh;
+  padding: var(--spacing-12) var(--spacing-11) var(--spacing-12) var(--spacing-11);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 54rem 1fr;
+  align-items: center;
+  gap: var(--spacing-9);
+}
+
+.img {
+  height: 40.4rem;
+  background-color: #444;
+
+  border-radius: var(--boarder-radius);
+}
+
+.textContent {
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-6);
+}
