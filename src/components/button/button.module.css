@@ -1,0 +1,29 @@
+.button {
+  padding: var(--spacing-4) var(--spacing-6);
+
+  background-color: var(--color-prime);
+  color: var(--color-text-light);
+
+  border: none;
+  border-radius: var(--boarder-radius);
+
+  font-family: inherit;
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+
+  cursor: pointer;
+}
+
+.full {
+  background-color: var(--color-prime);
+  color: var(--color-text-light);
+
+  border: none;
+}
+
+.outlined {
+  background-color: transparent;
+  color: var(--color-prime);
+
+  border: 1px solid var(--color-prime);
+}
