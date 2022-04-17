@@ -1,4 +1,8 @@
 .page {
   height: 100vh;
   padding: calc(var(--spacing-12) * 2) var(--spacing-11) var(--spacing-12) var(--spacing-11);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
