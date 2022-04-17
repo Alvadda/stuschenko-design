@@ -12,7 +12,10 @@ function Page({ page, threshold, children }: PageProps) {
   const { setPage } = usePageContext()
   const { containerRef } = useElementOnScreen(
     (isIntersecting) => {
-      if (isIntersecting) setPage(page)
+      if (isIntersecting) {
+        window.history.pushState({}, '', `/#${page}`)
+        setPage(page)
+      }
     },
     {
       threshold,
