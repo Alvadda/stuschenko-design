@@ -1,0 +1,65 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+
+  grid-template:
+    'img0 img1 img3 img4 img4' 1fr
+    'img0 img1 img3 img4 img4' 1fr
+    'img0 img1 img3 img4 img4' 1fr
+    'img0 img2 img3 img4 img4' 1fr
+    'img0 img2 img3 img4 img4' 1fr
+    'img0 img2 img7 img8 img9' 1fr
+    'img5 img6 img7 img8 img9' 1fr
+    'img5 img6 img7 img8 img9' 1fr
+    'img5 img6 img7 img8 img9' 1fr
+    'img5 img6 img7 img8 img9' 1fr / 1fr 0.7fr 1fr 1fr 1fr;
+  gap: 5px;
+  background-color: black;
+}
+
+.container div {
+  height: 100%;
+  width: 100%;
+}
+
+.img0 {
+  background-color: blue;
+  grid-area: img0;
+}
+.img1 {
+  background-color: green;
+  grid-area: img1;
+}
+.img2 {
+  background-color: yellow;
+  grid-area: img2;
+}
+.img3 {
+  background-color: yellowgreen;
+  grid-area: img3;
+}
+.img4 {
+  background-color: red;
+  grid-area: img4;
+}
+.img5 {
+  background-color: palevioletred;
+  grid-area: img5;
+}
+.img6 {
+  background-color: gray;
+  grid-area: img6;
+}
+.img7 {
+  background-color: saddlebrown;
+  grid-area: img7;
+}
+.img8 {
+  background-color: skyblue;
+  grid-area: img8;
+}
+.img9 {
+  background-color: darkcyan;
+  grid-area: img9;
+}

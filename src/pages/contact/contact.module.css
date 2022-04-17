@@ -4,3 +4,11 @@
   flex-direction: column;
   gap: var(--spacing-11);
 }
+
+.imgContainer {
+  height: 500px;
+  width: 500px;
+}
+.imgContainer img {
+  max-width: 100%;
+}
