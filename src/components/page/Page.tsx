@@ -23,9 +23,9 @@ function Page({ page, threshold, children }: PageProps) {
     }
   )
   return (
-    <div id={page} className={style.page} ref={containerRef}>
+    <section id={page} className={style.page} ref={containerRef}>
       {children}
-    </div>
+    </section>
   )
 }
 

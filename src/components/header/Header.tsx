@@ -12,7 +12,7 @@ function Header() {
   }
 
   return (
-    <div className={style.container}>
+    <header className={style.container}>
       <div className={style.heading}>
         <img src={logo} alt="Logo" />
         <p className={style.title}>Johanna Stuschenko</p>
@@ -30,7 +30,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   )
 }
 
