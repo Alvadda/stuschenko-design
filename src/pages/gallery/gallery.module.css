@@ -21,6 +21,16 @@
 .container div {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+}
+.container div:hover {
+  transform: scale(1.05);
+  border-radius: var(--boarder-radius);
+}
+
+img {
+  max-width: 100%;
 }
 
 .img0 {
