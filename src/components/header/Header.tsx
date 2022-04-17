@@ -1,8 +1,16 @@
 import style from './header.module.css'
 import React from 'react'
 import logo from '../../assets/logo.png'
+import { PageType, usePageContext } from '../../contexts/PageContext'
+import { combineClassNames } from '../../utils/utils'
 
 function Header() {
+  const { page } = usePageContext()
+
+  const getPageActiveClass = (pageHeading: PageType) => {
+    return page === pageHeading ? style.activNavLink : ''
+  }
+
   return (
     <div className={style.container}>
       <div className={style.heading}>
@@ -11,13 +19,13 @@ function Header() {
       </div>
       <nav className={style.navigationContainer}>
         <ul className={style.navigation}>
-          <li className={style.navigationItem}>
+          <li className={combineClassNames([style.navigationItem, getPageActiveClass('about')])}>
             <a href="#about">About</a>
           </li>
-          <li className={style.navigationItem}>
+          <li className={combineClassNames([style.navigationItem, getPageActiveClass('portfolio')])}>
             <a href="#portfolio">Portfolio</a>
           </li>
-          <li className={style.navigationItem}>
+          <li className={combineClassNames([style.navigationItem, getPageActiveClass('contact')])}>
             <a href="#contact">Contact</a>
           </li>
         </ul>

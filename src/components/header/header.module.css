@@ -44,3 +44,7 @@
   color: var(--color-text-dark);
   font-weight: var(--font-weight-bold);
 }
+
+.activNavLink a {
+  text-decoration: underline;
+}
