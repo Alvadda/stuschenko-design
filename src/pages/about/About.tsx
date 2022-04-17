@@ -4,7 +4,7 @@ import style from './about.module.css'
 
 function About() {
   return (
-    <Page page="about" threshold={0.7}>
+    <Page page="about" threshold={0.6}>
       <div className={style.container}>
         <h2>How did I become a webdesigner?</h2>
         <div className={style.content}>

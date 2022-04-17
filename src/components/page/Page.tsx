@@ -1,5 +1,6 @@
 import { PageType, usePageContext } from '../../contexts/PageContext'
 import { useElementOnScreen } from '../../hooks/useElementOnScreen'
+import { setBrowserHistorie } from '../../utils/utils'
 import style from './page.module.css'
 
 interface PageProps {
@@ -13,7 +14,7 @@ function Page({ page, threshold, children }: PageProps) {
   const { containerRef } = useElementOnScreen(
     (isIntersecting) => {
       if (isIntersecting) {
-        window.history.pushState({}, '', `/#${page}`)
+        setBrowserHistorie(`#${page}`)
         setPage(page)
       }
     },

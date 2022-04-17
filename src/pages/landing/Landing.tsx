@@ -4,7 +4,7 @@ import style from './landing.module.css'
 
 function Landing() {
   return (
-    <Page page="home" threshold={0.6}>
+    <Page page="home" threshold={0.5}>
       <div className={style.container}>
         <div className={style.img} />
         <div>
