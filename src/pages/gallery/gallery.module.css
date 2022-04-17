@@ -25,12 +25,15 @@
   transition: all 200ms ease-in-out;
 }
 .container div:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   border-radius: var(--boarder-radius);
 }
 
-img {
-  max-width: 100%;
+.container div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .img0 {
