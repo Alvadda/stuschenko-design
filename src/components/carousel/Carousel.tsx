@@ -4,9 +4,11 @@ import style from './carousel.module.css'
 
 interface Props {
   speed?: number
+  progressBar?: boolean
+  progressDots?: boolean
   children?: React.ReactNode
 }
-function Carousel({ speed = 10000, children }: Props) {
+function Carousel({ speed = 10000, progressBar = false, progressDots = false, children }: Props) {
   const [activIndex, setActivIndex] = useState<number>(0)
 
   const styledChildren =
@@ -30,7 +32,7 @@ function Carousel({ speed = 10000, children }: Props) {
         return setActivIndex(styledChildren.length || 0)
       }
       setActivIndex(activIndex + 1)
-    }, speed) //TODO take interval timer as prop
+    }, speed)
 
     return () => clearInterval(inverval)
   }, [styledChildren.length, activIndex, speed])
@@ -39,19 +41,23 @@ function Carousel({ speed = 10000, children }: Props) {
     <div className={style.container}>
       <div className={style.carousel}>
         <div className={style.carouselContent}>{styledChildren.map((child) => child)}</div>
-        <div className={style.progessBar}>
+        {progressBar && (
+          <div className={style.progessBar}>
+            {styledChildren.map((_, index) => {
+              const isActive = index === activIndex ? style.progessActiv : ''
+              return <div key={index} className={combineClassNames([style.progessBarItem, isActive])} />
+            })}
+          </div>
+        )}
+      </div>
+      {progressDots && (
+        <div className={style.progessContainer}>
           {styledChildren.map((_, index) => {
             const isActive = index === activIndex ? style.progessActiv : ''
-            return <div key={index} className={combineClassNames([style.progessBarItem, isActive])} />
+            return <div key={index} className={combineClassNames([style.progessItem, isActive])} />
           })}
         </div>
-      </div>
-      <div className={style.progessContainer}>
-        {styledChildren.map((_, index) => {
-          const isActive = index === activIndex ? style.progessActiv : ''
-          return <div key={index} className={combineClassNames([style.progessItem, isActive])} />
-        })}
-      </div>
+      )}
     </div>
   )
 }

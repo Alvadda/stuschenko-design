@@ -7,11 +7,12 @@ function Portfolio() {
     <Page page="portfolio" threshold={0.6}>
       <div className={style.container}>
         <h2>PORTFOLIO</h2>
-        <Carousel>
+        <Carousel speed={2000} progressBar progressDots>
           <div style={{ backgroundColor: 'green' }}></div>
           <div style={{ backgroundColor: 'pink' }}></div>
           <div style={{ backgroundColor: 'blue' }}></div>
           <div style={{ backgroundColor: 'red' }}></div>
+          <div style={{ backgroundColor: 'chartreuse' }}></div>
         </Carousel>
       </div>
     </Page>

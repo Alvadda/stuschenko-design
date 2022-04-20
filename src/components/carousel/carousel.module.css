@@ -14,7 +14,7 @@
 
 .carousel {
   display: grid;
-  grid-template-rows: 1fr 1rem;
+  grid-template-rows: 1fr auto;
   height: 500px;
   width: 600px;
   border-radius: var(--boarder-radius);
@@ -62,6 +62,7 @@
 }
 
 .progessBar {
+  height: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
