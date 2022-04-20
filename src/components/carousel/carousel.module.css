@@ -1,0 +1,59 @@
+:root {
+  --animation-duration: 500ms;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  height: 100%;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  height: 500px;
+  width: 600px;
+
+  background-color: gray;
+}
+
+.item {
+  position: absolute;
+  inset: 1;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+
+  transition: var(--animation-duration) all var(--animation-duration) ease-in-out;
+}
+
+.activ {
+  opacity: 1;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.progessContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-7);
+}
+
+.progessItem {
+  height: 5rem;
+  width: 5rem;
+
+  border-radius: 100%;
+
+  background-color: var(--color-prime-light);
+
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.progessItemActiv {
+  background-color: var(--color-prime);
+  transition: all var(--animation-duration) ease-in-out;
+}
