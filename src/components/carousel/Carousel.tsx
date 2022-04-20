@@ -3,9 +3,10 @@ import { combineClassNames } from '../../utils/utils'
 import style from './carousel.module.css'
 
 interface Props {
+  speed?: number
   children?: React.ReactNode
 }
-function Carousel({ children }: Props) {
+function Carousel({ speed = 10000, children }: Props) {
   const [activIndex, setActivIndex] = useState<number>(0)
 
   const styledChildren =
@@ -18,6 +19,7 @@ function Carousel({ children }: Props) {
       }
     }) ?? []
 
+  //TODO only run if is in viewport
   useEffect(() => {
     const inverval = setInterval(() => {
       const newIndex = activIndex + 1
@@ -28,17 +30,25 @@ function Carousel({ children }: Props) {
         return setActivIndex(styledChildren.length || 0)
       }
       setActivIndex(activIndex + 1)
-    }, 5000)
+    }, speed) //TODO take interval timer as prop
 
     return () => clearInterval(inverval)
-  }, [styledChildren.length, activIndex])
+  }, [styledChildren.length, activIndex, speed])
 
   return (
     <div className={style.container}>
-      <div className={style.carousel}>{styledChildren.map((child) => child)}</div>
+      <div className={style.carousel}>
+        <div className={style.carouselContent}>{styledChildren.map((child) => child)}</div>
+        <div className={style.progessBar}>
+          {styledChildren.map((_, index) => {
+            const isActive = index === activIndex ? style.progessActiv : ''
+            return <div key={index} className={combineClassNames([style.progessBarItem, isActive])} />
+          })}
+        </div>
+      </div>
       <div className={style.progessContainer}>
         {styledChildren.map((_, index) => {
-          const isActive = index === activIndex ? style.progessItemActiv : ''
+          const isActive = index === activIndex ? style.progessActiv : ''
           return <div key={index} className={combineClassNames([style.progessItem, isActive])} />
         })}
       </div>
