@@ -14,8 +14,7 @@
     'img5 img6 img7 img8 img9' 1fr
     'img5 img6 img7 img8 img9' 1fr
     'img5 img6 img7 img8 img9' 1fr / 1fr 0.7fr 1fr 1fr 1fr;
-  gap: 5px;
-  background-color: black;
+  gap: var(--spacing-2);
 
   border-radius: var(--boarder-radius-m);
   overflow: hidden;
