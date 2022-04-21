@@ -27,6 +27,7 @@ html::-webkit-scrollbar {
 body {
   font-family: 'Cormorant Unicase', serif;
   font-weight: var(--font-weight-regular);
+  line-height: var(--font-line-height-m);
   background-color: var(--color-background);
   color: var(--color-text-dark);
   -webkit-font-smoothing: antialiased;
@@ -36,12 +37,23 @@ body {
 h2 {
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-bold);
+  line-height: var(--font-line-height-xxl);
+}
+
+h3 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-6);
 }
 
 .text {
   margin-bottom: var(--spacing-6);
 
   font-size: var(--font-size-m);
+  font-weight: var(--font-weight-regular);
+}
+
+.bold {
   font-weight: var(--font-weight-bold);
 }
 

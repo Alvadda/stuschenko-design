@@ -9,7 +9,7 @@ function About() {
         <h2>How did I become a webdesigner?</h2>
         <div className={style.content}>
           <div className={style.img} />
-          <div className={style.textContent}>
+          <div>
             <p className="text">
               Not long ago a friend intended that there is no good app for time tracking for freelancer so my friend and I decided to
               develope.

@@ -19,9 +19,6 @@
   border-radius: var(--boarder-radius);
 }
 
-.textContent {
-}
-
 .buttons {
   display: flex;
   align-items: center;

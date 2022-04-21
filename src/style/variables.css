@@ -16,6 +16,10 @@
   --font-weight-semi-bold: 600;
   --font-weight-regular: 400;
 
+  --font-line-height-xxl: 40px;
+  --font-line-height-xl: 36px;
+  --font-line-height-m: 28px;
+
   --boarder-radius: 4px;
 
   --spacing-12: 12.8rem;
