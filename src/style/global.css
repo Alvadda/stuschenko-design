@@ -60,3 +60,7 @@ h3 {
 .text:last-of-type {
   margin-bottom: var(--spacing-7);
 }
+
+.text:last-child {
+  margin-bottom: 0;
+}
