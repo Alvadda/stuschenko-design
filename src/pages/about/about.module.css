@@ -16,7 +16,7 @@
   height: 40.4rem;
   background-color: #444;
 
-  border-radius: var(--boarder-radius);
+  border-radius: var(--boarder-radius-m);
 }
 
 .buttons {

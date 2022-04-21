@@ -20,7 +20,8 @@
   --font-line-height-xl: 36px;
   --font-line-height-m: 28px;
 
-  --boarder-radius: 4px;
+  --boarder-radius-m: 8px;
+  --boarder-radius-s: 4px;
 
   --spacing-12: 12.8rem;
   --spacing-11: 9.6rem;

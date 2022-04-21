@@ -9,7 +9,7 @@
   height: 58.3rem;
   background-color: #444;
 
-  border-radius: var(--boarder-radius);
+  border-radius: var(--boarder-radius-m);
 }
 
 .heading {

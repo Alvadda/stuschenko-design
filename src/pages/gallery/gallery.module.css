@@ -16,6 +16,9 @@
     'img5 img6 img7 img8 img9' 1fr / 1fr 0.7fr 1fr 1fr 1fr;
   gap: 5px;
   background-color: black;
+
+  border-radius: var(--boarder-radius-m);
+  overflow: hidden;
 }
 
 .container div {
@@ -36,13 +39,13 @@
 /* grow animation */
 /* .container div:hover {
   transform: scale(1.07);
-  border-radius: var(--boarder-radius);
+  border-radius: var(--boarder-radius-s);
 } */
 
 /* zoom animation */
 .container div > img:hover {
   transform: scale(1.07);
-  border-radius: var(--boarder-radius);
+  border-radius: var(--boarder-radius-s);
 }
 
 .img0 {
