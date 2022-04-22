@@ -9,4 +9,4 @@ export const setBrowserHistorie = (location?: string) => {
   window.history.pushState({}, '', location)
 }
 
-export const getEventTargetAsFormTarget = <T>(target: EventTarget) => target as unknown as T
+export const getEventTargetAs = <T>(target: EventTarget) => target as unknown as T

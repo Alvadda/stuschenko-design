@@ -2,7 +2,7 @@ import { FormEvent, InputHTMLAttributes } from 'react'
 import Button from '../../components/button/Button'
 import Page from '../../components/page/Page'
 import TextField from '../../components/textField/TextField'
-import { getEventTargetAsFormTarget } from '../../utils/utils'
+import { getEventTargetAs } from '../../utils/utils'
 import style from './contact.module.css'
 
 interface FormTarget {
@@ -15,7 +15,7 @@ function Contect() {
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const formTarget = getEventTargetAsFormTarget<FormTarget>(event.target)
+    const formTarget = getEventTargetAs<FormTarget>(event.target)
     console.log('firstName', formTarget.firstName.value)
     console.log('sureName', formTarget.sureName.value)
     console.log('email', formTarget.email.value)
