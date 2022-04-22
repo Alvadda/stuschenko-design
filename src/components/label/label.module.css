@@ -1,0 +1,12 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--spacing-5);
+}
+
+.title {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+}

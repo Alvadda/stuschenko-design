@@ -3,13 +3,13 @@ import { useElementOnScreen } from '../../hooks/useElementOnScreen'
 import { setBrowserHistorie } from '../../utils/utils'
 import style from './page.module.css'
 
-interface PageProps {
+interface Props {
   page: PageType
   threshold?: number | number[]
   children?: React.ReactNode
 }
 
-function Page({ page, threshold, children }: PageProps) {
+function Page({ page, threshold, children }: Props) {
   const { setPage } = usePageContext()
   const { containerRef } = useElementOnScreen(
     (isIntersecting) => {
