@@ -1,6 +1,7 @@
 import { FormEvent, InputHTMLAttributes } from 'react'
 import Button from '../../components/button/Button'
 import Page from '../../components/page/Page'
+import TextArea from '../../components/textArea/TextArea'
 import TextField from '../../components/textField/TextField'
 import { getEventTargetAs } from '../../utils/utils'
 import style from './contact.module.css'
@@ -32,6 +33,7 @@ function Contect() {
           <Button variant="full" type="submit" style={{ height: '5.2rem' }}>
             send
           </Button>
+          <TextArea label="Message" id="message" rows={5} />
         </form>
       </div>
     </Page>
