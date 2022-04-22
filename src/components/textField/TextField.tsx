@@ -12,11 +12,11 @@ function TextField({ label, id, type = 'text', className, ...rest }: Props) {
   if (label)
     return (
       <Label title={label} htmlFor={id}>
-        <input className={`${style.input} ${className}`} type={type} id={id} {...rest} />
+        <input className={`${style.input} ${className}`} type={type} id={id} name={id} {...rest} />
       </Label>
     )
 
-  return <input className={`${style.input} ${className}`} type={type} id={id} {...rest} />
+  return <input className={`${style.input} ${className}`} type={type} id={id} name={id} {...rest} />
 }
 
 export default TextField
