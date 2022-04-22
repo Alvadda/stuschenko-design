@@ -1,5 +1,6 @@
 import Label from '../../components/label/Label'
 import Page from '../../components/page/Page'
+import TextField from '../../components/textField/TextField'
 import style from './contact.module.css'
 
 function Contect() {
@@ -7,9 +8,11 @@ function Contect() {
     <Page page="contact" threshold={0.6}>
       <div className={style.container}>
         <h2>CONTECT</h2>
-        <Label htmlFor="test" title="Test">
-          <input type="text" id="test" />
-        </Label>
+        <form className={style.form}>
+          <TextField label="Firstname" id="firstName" />
+          <TextField label="Surename" id="sureName" />
+          <TextField label="E-Mail" id="email" type="email" />
+        </form>
       </div>
     </Page>
   )
