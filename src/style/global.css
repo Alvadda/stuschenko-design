@@ -41,6 +41,7 @@ h2 {
   font-weight: var(--font-weight-semi-bold);
   line-height: var(--font-line-height-xxl);
   font-family: 'Lora', serif;
+  text-transform: uppercase;
 }
 
 h3 {

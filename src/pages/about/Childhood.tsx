@@ -12,8 +12,6 @@ function Childhood() {
             <div style={{ backgroundColor: 'green' }}></div>
             <div style={{ backgroundColor: 'pink' }}></div>
             <div style={{ backgroundColor: 'blue' }}></div>
-            <div style={{ backgroundColor: 'red' }}></div>
-            <div style={{ backgroundColor: 'chartreuse' }}></div>
           </Carousel>
           <div>
             <h3>Moving into a small town &mdash; will that be fun for a five year old girl?</h3>
