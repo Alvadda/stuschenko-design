@@ -5,9 +5,9 @@ import style from './landing.module.css'
 function Landing() {
   return (
     <Page page="home" threshold={0.5}>
-      <div className={style.container}>
+      <div className="container">
         <h2 className={style.heading}>Welcome!</h2>
-        <div className={style.content}>
+        <div className="content">
           <div className={style.img} />
           <div>
             <p className="text">I`m Johanna, a Webdesigner from Hamburg, Germany</p>
@@ -16,7 +16,7 @@ function Landing() {
               designing.
             </p>
             <p className="text">Want to leran more about me or my Projects? Press the button to find out!</p>
-            <div className={style.buttons}>
+            <div className="buttonsGrp">
               <Button variant="full">About me</Button>
               <Button variant="outlined">My projects</Button>
             </div>
