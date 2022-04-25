@@ -1,15 +1,15 @@
 .button {
   padding: var(--spacing-4) var(--spacing-6);
 
-  background-color: var(--color-prime);
-  color: var(--color-text-light);
+  background-color: var(--color-prime-light);
+  color: var(--color-text-dark);
 
   border: none;
-  border-radius: var(--boarder-radius-s);
+  border-radius: var(--boarder-radius-m);
 
   font-family: inherit;
   font-size: var(--font-size-m);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-regular);
 
   cursor: pointer;
 
@@ -25,15 +25,13 @@
 }
 
 .full {
-  background-color: var(--color-prime);
-  color: var(--color-text-light);
+  background-color: var(--color-prime-light);
 
   border: none;
 }
 
 .outlined {
   background-color: transparent;
-  color: var(--color-prime);
 
-  border: 1px solid var(--color-prime);
+  border: 1px solid var(--color-prime-light);
 }
