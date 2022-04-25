@@ -1,26 +1,6 @@
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: var(--spacing-11);
-}
-
-.content {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  align-items: flex-start;
-  gap: var(--spacing-9);
-}
-
 .img {
-  height: 40.4rem;
+  height: 100%;
   background-color: #444;
 
   border-radius: var(--boarder-radius-m);
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-6);
 }
