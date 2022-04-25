@@ -11,12 +11,12 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
 function TextField({ label, id, type = 'text', className, ...rest }: Props) {
   if (label)
     return (
-      <Label title={label} htmlFor={id}>
-        <input className={`${style.input} ${className}`} type={type} id={id} name={id} {...rest} />
+      <Label title={label} htmlFor={id} className={className}>
+        <input className={style.input} type={type} id={id} name={id} {...rest} />
       </Label>
     )
 
-  return <input className={`${style.input} ${className}`} type={type} id={id} name={id} {...rest} />
+  return <input className={style.input} type={type} id={id} name={id} {...rest} />
 }
 
 export default TextField

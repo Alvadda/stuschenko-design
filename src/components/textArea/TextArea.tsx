@@ -10,12 +10,12 @@ interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 function TextArea({ label, id, className, ...rest }: Props) {
   if (label)
     return (
-      <Label title={label} htmlFor={id}>
-        <textarea className={`${style.area} ${className}`} id={id} name={id} {...rest} />
+      <Label title={label} htmlFor={id} className={className}>
+        <textarea className={style.area} id={id} name={id} {...rest} />
       </Label>
     )
 
-  return <textarea className={`${style.area} ${className}`} id={id} name={id} {...rest} />
+  return <textarea className={style.area} id={id} name={id} {...rest} />
 }
 
 export default TextArea

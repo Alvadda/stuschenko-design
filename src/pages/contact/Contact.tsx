@@ -1,4 +1,4 @@
-import { FormEvent, InputHTMLAttributes } from 'react'
+import { FormEvent, InputHTMLAttributes, TextareaHTMLAttributes } from 'react'
 import Button from '../../components/button/Button'
 import Page from '../../components/page/Page'
 import TextArea from '../../components/textArea/TextArea'
@@ -10,6 +10,7 @@ interface FormTarget {
   firstName: InputHTMLAttributes<HTMLInputElement>
   sureName: InputHTMLAttributes<HTMLInputElement>
   email: InputHTMLAttributes<HTMLInputElement>
+  message: TextareaHTMLAttributes<HTMLTextAreaElement>
 }
 
 function Contect() {
@@ -20,6 +21,7 @@ function Contect() {
     console.log('firstName', formTarget.firstName.value)
     console.log('sureName', formTarget.sureName.value)
     console.log('email', formTarget.email.value)
+    console.log('message', formTarget.message.value)
   }
 
   return (
@@ -30,10 +32,10 @@ function Contect() {
           <TextField label="Firstname" id="firstName" />
           <TextField label="Surename" id="sureName" />
           <TextField label="E-Mail" id="email" type="email" />
-          <Button variant="full" type="submit" style={{ height: '5.2rem' }}>
+          <TextArea label="Message" id="message" rows={5} className={style.message} />
+          <Button variant="full" type="submit" style={{ height: '5.2rem', gridColumn: '2 / 3' }}>
             send
           </Button>
-          <TextArea label="Message" id="message" rows={5} />
         </form>
       </div>
     </Page>

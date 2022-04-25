@@ -11,15 +11,15 @@
 
   --font-size-xxl: 4rem;
   --font-size-xl: 3.2rem;
-  --font-size-m: 2rem;
+  --font-size-m: 1.6rem;
 
   --font-weight-bold: 700;
-  --font-weight-semi-bold: 600;
-  --font-weight-regular: 400;
+  --font-weight-semi-bold: 500;
+  --font-weight-regular: 600;
 
   --font-line-height-xxl: 40px;
   --font-line-height-xl: 36px;
-  --font-line-height-m: 28px;
+  --font-line-height-m: 24px;
 
   --boarder-radius-m: 8px;
   --boarder-radius-s: 4px;

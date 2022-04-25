@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: var(--spacing-11);
+  gap: var(--spacing-10);
 
   height: 100%;
   width: 100%;
@@ -15,4 +15,8 @@
   gap: var(--spacing-7);
 
   width: 60%;
+}
+
+.message {
+  grid-column: span 2;
 }
