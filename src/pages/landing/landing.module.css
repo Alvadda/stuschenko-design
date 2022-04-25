@@ -1,18 +1,35 @@
 .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: var(--spacing-9);
+
+  height: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--spacing-12);
+
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-8);
 }
 
 .img {
-  height: 58.3rem;
+  height: 100%;
   background-color: #444;
 
   border-radius: var(--boarder-radius-m);
 }
 
 .heading {
-  margin-bottom: var(--spacing-8);
   text-transform: uppercase;
 }
