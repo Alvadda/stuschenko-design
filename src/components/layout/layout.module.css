@@ -13,6 +13,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+
+.spacingSmall {
+  gap: var(--spacing-11);
+}
+
+.spacingLarge {
   gap: calc(var(--spacing-11) * 2);
 }
 
