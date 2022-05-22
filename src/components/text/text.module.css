@@ -18,3 +18,11 @@
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-regular);
 }
+
+.textDark {
+  color: var(--color-text-dark);
+}
+
+.textLight {
+  color: var(--color-text-light);
+}

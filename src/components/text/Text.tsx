@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 
+import { combineClassNames } from '../../utils/utils'
 import style from './text.module.css'
 
 interface Props {
@@ -10,11 +11,13 @@ interface Props {
 }
 
 function Text({ type = 'p', color = 'dark', textAlign = 'start', children }: Props) {
-  if (type === 'h2') return <h2 className={style.h2}>{children}</h2>
-  if (type === 'h3') return <h3 className={style.h3}>{children}</h3>
+  const textColor = color === 'dark' ? style.textDark : style.textLight
+
+  if (type === 'h2') return <h2 className={combineClassNames([style.h2, textColor])}>{children}</h2>
+  if (type === 'h3') return <h3 className={combineClassNames([style.h3, textColor])}>{children}</h3>
 
   return (
-    <p className={style.p} style={{ textAlign }}>
+    <p className={combineClassNames([style.p, textColor])} style={{ textAlign }}>
       {children}
     </p>
   )
