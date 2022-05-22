@@ -1,8 +1,9 @@
-import style from './header.module.css'
 import React from 'react'
-import logo from '../../assets/logo.png'
+
+import { ReactComponent as Logo } from '../../assets/logoSmall.svg'
 import { PageType, usePageContext } from '../../contexts/PageContext'
 import { combineClassNames } from '../../utils/utils'
+import style from './header.module.css'
 
 function Header() {
   const { page } = usePageContext()
@@ -14,7 +15,7 @@ function Header() {
   return (
     <header className={style.container}>
       <div className={style.heading}>
-        <img src={logo} alt="Logo" />
+        <Logo />
         <p className={style.title}>Johanna Stuschenko</p>
       </div>
       <nav className={style.navigationContainer}>
