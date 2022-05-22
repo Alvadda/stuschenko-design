@@ -1,0 +1,8 @@
+.buttonGrp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-11);
+
+  margin-top: var(--spacing-9);
+}
