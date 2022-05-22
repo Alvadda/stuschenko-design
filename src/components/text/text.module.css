@@ -6,6 +6,14 @@
   text-transform: uppercase;
 }
 
+.h3 {
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+  font-size: var(--font-size-ml);
+  font-weight: var(--font-weight-regular);
+  margin-bottom: var(--spacing-6);
+}
+
 .p {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-regular);

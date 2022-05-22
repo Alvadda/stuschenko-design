@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 *,
 *::after,
@@ -26,8 +26,14 @@ html::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
 
+@media only screen and (max-width: 44em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 body {
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: var(--font-weight-regular);
   line-height: var(--font-line-height-m);
   background-color: var(--color-background);
@@ -42,12 +48,6 @@ h2 {
   line-height: var(--font-line-height-xxl);
   font-family: 'Lora', serif;
   text-transform: uppercase;
-}
-
-h3 {
-  font-size: var(--font-size-m);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-6);
 }
 
 .container {
@@ -72,7 +72,9 @@ h3 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--spacing-11);
+
+  margin-top: var(--spacing-9);
 }
 
 .text {
