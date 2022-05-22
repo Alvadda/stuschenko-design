@@ -1,4 +1,5 @@
 import { Children, cloneElement, isValidElement, useEffect, useState } from 'react'
+
 import { combineClassNames } from '../../utils/utils'
 import style from './carousel.module.css'
 
@@ -6,15 +7,17 @@ interface Props {
   speed?: number
   progressBar?: boolean
   progressDots?: boolean
+  height?: string
+  width?: string
   children?: React.ReactNode
 }
-function Carousel({ speed = 10000, progressBar = false, progressDots = false, children }: Props) {
-  const [activIndex, setActivIndex] = useState<number>(0)
+function Carousel({ speed = 10000, progressBar = false, progressDots = false, height = '100%', width = '100%', children }: Props) {
+  const [activeIndex, setActiveIndex] = useState<number>(0)
 
   const styledChildren =
     Children.map(children, (child, index) => {
       if (isValidElement(child)) {
-        const isActive = index === activIndex ? style.activ : ''
+        const isActive = index === activeIndex ? style.activ : ''
         const className = combineClassNames([child.props.className, style.item, isActive])
 
         return cloneElement(child, { className })
@@ -23,28 +26,28 @@ function Carousel({ speed = 10000, progressBar = false, progressDots = false, ch
 
   //TODO only run if is in viewport
   useEffect(() => {
-    const inverval = setInterval(() => {
-      const newIndex = activIndex + 1
+    const interval = setInterval(() => {
+      const newIndex = activeIndex + 1
       if (newIndex >= (styledChildren.length || 0)) {
-        return setActivIndex(0)
+        return setActiveIndex(0)
       }
       if (newIndex < 0) {
-        return setActivIndex(styledChildren.length || 0)
+        return setActiveIndex(styledChildren.length || 0)
       }
-      setActivIndex(activIndex + 1)
+      setActiveIndex(activeIndex + 1)
     }, speed)
 
-    return () => clearInterval(inverval)
-  }, [styledChildren.length, activIndex, speed])
+    return () => clearInterval(interval)
+  }, [styledChildren.length, activeIndex, speed])
 
   return (
-    <div className={style.container}>
+    <div className={style.container} style={{ height, width }}>
       <div className={style.carousel}>
         <div className={style.carouselContent}>{styledChildren.map((child) => child)}</div>
         {progressBar && (
           <div className={style.progessBar}>
             {styledChildren.map((_, index) => {
-              const isActive = index === activIndex ? style.progessActiv : ''
+              const isActive = index === activeIndex ? style.progessActiv : ''
               return <div key={index} className={combineClassNames([style.progessBarItem, isActive])} />
             })}
           </div>
@@ -53,7 +56,7 @@ function Carousel({ speed = 10000, progressBar = false, progressDots = false, ch
       {progressDots && (
         <div className={style.progessContainer}>
           {styledChildren.map((_, index) => {
-            const isActive = index === activIndex ? style.progessActiv : ''
+            const isActive = index === activeIndex ? style.progessActiv : ''
             return <div key={index} className={combineClassNames([style.progessItem, isActive])} />
           })}
         </div>
