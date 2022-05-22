@@ -15,3 +15,11 @@
   align-items: center;
   gap: calc(var(--spacing-11) * 2);
 }
+
+@media screen and (max-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9);
+  }
+}
