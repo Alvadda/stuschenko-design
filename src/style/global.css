@@ -28,7 +28,7 @@ html::-webkit-scrollbar {
 
 @media only screen and (max-width: 44em) {
   html {
-    font-size: 40%;
+    font-size: 55%;
   }
 }
 
@@ -40,58 +40,4 @@ body {
   color: var(--color-text-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h2 {
-  font-size: var(--font-size-xxl);
-  font-weight: var(--font-weight-semi-bold);
-  line-height: var(--font-line-height-xxl);
-  font-family: 'Lora', serif;
-  text-transform: uppercase;
-}
-
-.container {
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: var(--spacing-9);
-}
-
-.content {
-  height: 100%;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: var(--spacing-12);
-}
-
-.buttonsGrp {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: var(--spacing-11);
-
-  margin-top: var(--spacing-9);
-}
-
-.text {
-  margin-bottom: var(--spacing-6);
-
-  font-size: var(--font-size-m);
-  font-weight: var(--font-weight-regular);
-}
-
-.bold {
-  font-weight: var(--font-weight-bold);
-}
-
-.text:last-of-type {
-  margin-bottom: var(--spacing-9);
-}
-
-.text:last-child {
-  margin-bottom: 0;
 }
