@@ -5,6 +5,7 @@ import PageContextProvider from './contexts/PageContext'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import Portfolio from './pages/portfolio/Portfolio'
+import TimeTracker from './pages/portfolio/TimeTracker'
 import Welcome from './pages/welcome/welcome'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Welcome />
       <About />
       <Portfolio />
+      <TimeTracker />
       <Contact />
     </PageContextProvider>
   )
