@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  aspect-ratio: 1/1;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-6);
+}
+
+.container > div {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: var(--color-prime) solid 1px;
+  border-radius: var(--boarder-radius-m);
+}

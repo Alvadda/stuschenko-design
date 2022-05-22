@@ -1,6 +1,5 @@
-import ttDateImg from '../../assets/ttDate.png'
+import ColorGrid from '../../components/colorGrid/ColorGrid'
 import Layout from '../../components/layout/Layout'
-import LazyImg from '../../components/lazyImg/LazyImg'
 import Page from '../../components/page/Page'
 import Stack from '../../components/stack/Stack'
 import Text from '../../components/text/Text'
@@ -9,7 +8,12 @@ function Website() {
   return (
     <Page page="portfolio" threshold={0.6}>
       <Layout title="Stuschenko-Design.com - The Project">
-        <LazyImg alt="Image of a scroll selection for a date" width={'100%'} src={ttDateImg} />
+        <ColorGrid
+          color1={{ code: '#FAF3F4', description: 'Background color', textColor: 'dark' }}
+          color2={{ code: '#F4CDCE', description: 'Main color', textColor: 'dark' }}
+          color3={{ code: '#4A2918', description: 'Text', textColor: 'light' }}
+          color4={{ code: '#000000', description: 'Logo', textColor: 'light' }}
+        />
         <Stack spacing="--spacing-4">
           <Text>
             As part of my learning, I decided to design my website. It would be my first project designed all by myself, so I was everything
