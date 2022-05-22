@@ -6,6 +6,7 @@ import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import Portfolio from './pages/portfolio/Portfolio'
 import TimeTracker from './pages/portfolio/TimeTracker'
+import Website from './pages/portfolio/Website'
 import Welcome from './pages/welcome/welcome'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Portfolio />
       <TimeTracker />
+      <Website />
       <Contact />
     </PageContextProvider>
   )
