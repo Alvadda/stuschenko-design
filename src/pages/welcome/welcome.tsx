@@ -16,7 +16,7 @@ function Welcome() {
           <LazyImg alt="Johanna Stuschenko smiling" src={welcomeImg} />
         </ImgBox>
         <div>
-          <Stack spacing="--spacing-4">
+          <Stack spacing="--spacing-4" alignItems="flex-start">
             <Text>I'm Johanna, a Web designer from Hamburg, Germany.</Text>
             <Text>As soon as I found out that web designing is something I truly enjoy, I knew I have to become a web designer.</Text>
             <Text>

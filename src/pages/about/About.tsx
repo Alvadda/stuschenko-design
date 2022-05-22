@@ -24,7 +24,7 @@ function About() {
           <LazyImg alt="Johanna Stuschenko smiling in front of a sea" src={about5Img} />
         </Carousel>
         <div>
-          <Stack spacing="--spacing-4">
+          <Stack spacing="--spacing-4" alignItems="flex-start">
             <Text>
               I grew up in a small town and moved for my apprenticeship to Hamburg. After finishing, I deiced to go to Australia for a work
               and travel year

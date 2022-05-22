@@ -14,6 +14,7 @@ function Website() {
           color3={{ code: '#4A2918', description: 'Text', textColor: 'light' }}
           color4={{ code: '#000000', description: 'Logo', textColor: 'light' }}
         />
+
         <Stack spacing="--spacing-4">
           <Text>
             As part of my learning, I decided to design my website. It would be my first project designed all by myself, so I was everything

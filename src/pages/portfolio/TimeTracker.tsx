@@ -1,4 +1,5 @@
 import ttDateImg from '../../assets/ttDate.png'
+import ImgBox from '../../components/imgBox/ImgBox'
 import Layout from '../../components/layout/Layout'
 import LazyImg from '../../components/lazyImg/LazyImg'
 import Page from '../../components/page/Page'
@@ -9,7 +10,9 @@ function TimeTracker() {
   return (
     <Page page="portfolio" threshold={0.6}>
       <Layout title="time tracker app - the project">
-        <LazyImg alt="Johanna Stuschenko smiling" width={'100%'} src={ttDateImg} />
+        <ImgBox>
+          <LazyImg alt="Johanna Stuschenko smiling" src={ttDateImg} />
+        </ImgBox>
         <Stack spacing="--spacing-4">
           <Text>
             Not long ago, a friend of ours intended that there is no good app for time tracking. That's the time when my boyfriend and I

@@ -9,7 +9,7 @@ function Portfolio() {
       <Layout title="portfolio" contentSpacing="m">
         <Stack spacing="--spacing-11">
           <Text type="h3">time tracking</Text>
-          <Stack spacing="--spacing-4">
+          <Stack spacing="--spacing-4" alignItems="flex-start">
             <Text>You can track your time, add projects, tasks as well as some notes.</Text>
             <Text>
               We thought about what do the user needs to track its time best and completed the app with its best features and easy to hand
@@ -19,7 +19,7 @@ function Portfolio() {
         </Stack>
         <Stack spacing="--spacing-11">
           <Text type="h3">stuschenko_design.com</Text>
-          <Stack spacing="--spacing-4">
+          <Stack spacing="--spacing-4" alignItems="flex-start">
             <Text>I wanted to create a website where you get insight into my work as well as into my person.</Text>
             <Text>To create a site that convince, a website you are willingly to visit again; this is my goal.</Text>
           </Stack>
