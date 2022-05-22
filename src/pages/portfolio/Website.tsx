@@ -9,7 +9,7 @@ function Website() {
   return (
     <Page page="portfolio" threshold={0.6}>
       <Layout title="Stuschenko-Design.com - The Project">
-        <LazyImg alt="Image of a scroll selection for a date" src={ttDateImg} />
+        <LazyImg alt="Image of a scroll selection for a date" width={'100%'} src={ttDateImg} />
         <Stack spacing="--spacing-4">
           <Text>
             As part of my learning, I decided to design my website. It would be my first project designed all by myself, so I was everything
