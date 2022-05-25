@@ -1,4 +1,5 @@
 import { FormEvent, InputHTMLAttributes, TextareaHTMLAttributes } from 'react'
+
 import Button from '../../components/button/Button'
 import Page from '../../components/page/Page'
 import TextArea from '../../components/textArea/TextArea'
@@ -12,6 +13,13 @@ interface FormTarget {
   email: InputHTMLAttributes<HTMLInputElement>
   message: TextareaHTMLAttributes<HTMLTextAreaElement>
 }
+
+// interface FormElements extends HTMLFormControlsCollection {
+//   firstName: HTMLInputElement
+// }
+// interface UsernameFormElement extends HTMLFormElement {
+//   readonly elements: FormElements
+// }
 
 function Contect() {
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
