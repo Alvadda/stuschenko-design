@@ -20,6 +20,23 @@
   width: 100%;
 }
 
+.email {
+  grid-column: span 1;
+}
+
 .message {
   grid-column: span 2;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 0;
+  }
+  .form {
+    gap: var(--spacing-6);
+    row-gap: var(--spacing-6);
+  }
+  .email {
+    grid-column: span 2;
+  }
 }

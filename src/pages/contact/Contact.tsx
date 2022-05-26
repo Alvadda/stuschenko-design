@@ -2,6 +2,7 @@ import { FormEvent, InputHTMLAttributes, TextareaHTMLAttributes } from 'react'
 
 import Button from '../../components/button/Button'
 import Page from '../../components/page/Page'
+import Text from '../../components/text/Text'
 import TextArea from '../../components/textArea/TextArea'
 import TextField from '../../components/textField/TextField'
 import { getEventTargetAs } from '../../utils/utils'
@@ -35,11 +36,14 @@ function Contect() {
   return (
     <Page page="contact" threshold={0.6}>
       <div className={style.container}>
-        <h2>CONTECT</h2>
+        <Text type="h2">Here´s my contact from</Text>
+        <Text textAlign="start">
+          Fill out the form below, and your message will go straight to my inbox. You can also email me here: hello@stuschenko-design.com
+        </Text>
         <form className={style.form} onSubmit={onSubmit}>
           <TextField label="Firstname" id="firstName" />
           <TextField label="Surename" id="sureName" />
-          <TextField label="E-Mail" id="email" type="email" />
+          <TextField label="E-Mail" id="email" type="email" className={style.email} />
           <TextArea label="Message" id="message" rows={5} className={style.message} />
           <Button variant="full" type="submit" style={{ height: '5.2rem', justifySelf: 'flex-start' }}>
             send
