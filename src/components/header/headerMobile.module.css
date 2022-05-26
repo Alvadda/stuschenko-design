@@ -1,7 +1,12 @@
+.spacer {
+  height: calc(var(--spacing-12) * 1.5);
+}
+
 .container {
+  top: 0;
   position: fixed;
   width: 100vw;
-  height: var(--spacing-12);
+  height: calc(var(--spacing-12) * 1.5);
   padding: var(--spacing-8) var(--spacing-11);
 
   display: flex;

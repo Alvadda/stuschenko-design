@@ -45,7 +45,7 @@ function Contect() {
           <TextField label="Surename" id="sureName" />
           <TextField label="E-Mail" id="email" type="email" className={style.email} />
           <TextArea label="Message" id="message" rows={5} className={style.message} />
-          <Button variant="full" type="submit" style={{ height: '5.2rem', justifySelf: 'flex-start' }}>
+          <Button variant="full" type="submit" style={{ justifySelf: 'flex-start' }}>
             send
           </Button>
         </form>

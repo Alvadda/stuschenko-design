@@ -1,8 +1,14 @@
 .page {
   min-height: 100vh;
-  padding: calc(var(--spacing-12) * 2) var(--spacing-11) var(--spacing-9) var(--spacing-11);
+  padding: calc(var(--spacing-12)) var(--spacing-11) var(--spacing-9) var(--spacing-11);
 
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    padding: calc(var(--spacing-12)) var(--spacing-11) var(--spacing-9) var(--spacing-11);
+  }
 }

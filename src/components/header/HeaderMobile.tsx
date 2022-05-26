@@ -9,16 +9,19 @@ function HeaderMobile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className={style.container}>
-      <div className={style.heading}>
-        <Text type="h1" textAlign="center">
-          Johanna Stuschenko
-        </Text>
-        <div className={style.menu} onClick={() => setIsMenuOpen((value) => !value)}>
-          {isMenuOpen ? <Cross /> : <Menu />}
+    <>
+      <div className={style.spacer}></div>
+      <header className={style.container}>
+        <div className={style.heading}>
+          <Text type="h1" textAlign="center">
+            Johanna Stuschenko
+          </Text>
+          <div className={style.menu} onClick={() => setIsMenuOpen((value) => !value)}>
+            {isMenuOpen ? <Cross /> : <Menu />}
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   )
 }
 
