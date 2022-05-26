@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import PageContextProvider from './contexts/PageContext'
 import About from './pages/about/About'
@@ -19,6 +20,7 @@ function App() {
       <TimeTracker />
       <Website />
       <Contact />
+      <Footer />
     </PageContextProvider>
   )
 }
