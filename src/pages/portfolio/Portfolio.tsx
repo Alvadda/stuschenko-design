@@ -18,7 +18,7 @@ function Portfolio() {
           </Stack>
         </Stack>
         <Stack spacing="--spacing-11">
-          <Text type="h3">stuschenko_design.com</Text>
+          <Text type="h3">stuschenko_design</Text>
           <Stack spacing="--spacing-4" alignItems="flex-start">
             <Text>I wanted to create a website where you get insight into my work as well as into my person.</Text>
             <Text>To create a site that convince, a website you are willingly to visit again; this is my goal.</Text>

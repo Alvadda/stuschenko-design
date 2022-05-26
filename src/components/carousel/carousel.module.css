@@ -3,6 +3,8 @@
 }
 
 .container {
+  height: 51.2rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,4 +90,16 @@
 .progessActiv {
   background-color: var(--color-prime);
   transition: all var(--animation-duration) ease-in-out;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    height: 30rem;
+  }
 }

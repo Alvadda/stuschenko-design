@@ -12,7 +12,7 @@ function Welcome() {
   return (
     <Page page="home" threshold={0.5}>
       <Layout title="welcome">
-        <ImgBox height="51.2rem">
+        <ImgBox>
           <LazyImg alt="Johanna Stuschenko smiling" src={welcomeImg} />
         </ImgBox>
         <div>

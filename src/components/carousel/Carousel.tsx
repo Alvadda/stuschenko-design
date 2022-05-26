@@ -11,7 +11,7 @@ interface Props {
   width?: string
   children?: React.ReactNode
 }
-function Carousel({ speed = 10000, progressBar = false, progressDots = false, height = '100%', width = '100%', children }: Props) {
+function Carousel({ speed = 10000, progressBar = false, progressDots = false, children }: Props) {
   const [activeIndex, setActiveIndex] = useState<number>(0)
 
   const styledChildren =
@@ -41,7 +41,7 @@ function Carousel({ speed = 10000, progressBar = false, progressDots = false, he
   }, [styledChildren.length, activeIndex, speed])
 
   return (
-    <div className={style.container} style={{ height, width }}>
+    <div className={style.container}>
       <div className={style.carousel}>
         <div className={style.carouselContent}>{styledChildren.map((child) => child)}</div>
         {progressBar && (

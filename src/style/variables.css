@@ -44,3 +44,25 @@
   --breakpoint-s: 44em;
   --breakpoint-xs: 34em;
 }
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --font-size-xxl: 4rem;
+    --font-size-xl: 3.2rem;
+    --font-size-ml: 2.8rem;
+    --font-size-m: 1.6rem;
+
+    --spacing-12: 6.4rem;
+    --spacing-11: 4.8rem;
+    --spacing-10: 4rem;
+    --spacing-9: 3.2rem;
+    --spacing-8: 2.4rem;
+    --spacing-7: 1.7rem;
+    --spacing-6: 1.2rem;
+    --spacing-5: 0.8rem;
+    --spacing-4: 0.6rem;
+    --spacing-3: 0.4rem;
+    --spacing-2: 0.2rem;
+    --spacing-1: 0.1rem;
+  }
+}

@@ -14,9 +14,14 @@
   object-position: center;
   overflow: hidden;
 }
+@media screen and (max-width: 1250px) {
+  .box {
+    height: 40rem;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .box {
-    height: 300px;
+    height: 30rem;
   }
 }

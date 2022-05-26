@@ -3,7 +3,6 @@ import React from 'react'
 import Header from './components/header/Header'
 import PageContextProvider from './contexts/PageContext'
 import About from './pages/about/About'
-import Contact from './pages/contact/Contact'
 import Portfolio from './pages/portfolio/Portfolio'
 import TimeTracker from './pages/portfolio/TimeTracker'
 import Website from './pages/portfolio/Website'
@@ -18,7 +17,7 @@ function App() {
       <Portfolio />
       <TimeTracker />
       <Website />
-      <Contact />
+      {/* <Contact /> */}
     </PageContextProvider>
   )
 }
