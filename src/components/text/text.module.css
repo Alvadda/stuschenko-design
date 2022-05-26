@@ -1,3 +1,8 @@
+.h1 {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+}
+
 .h2 {
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-regular);

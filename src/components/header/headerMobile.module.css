@@ -1,0 +1,35 @@
+.container {
+  position: fixed;
+  width: 100vw;
+  height: var(--spacing-12);
+  padding: var(--spacing-8) var(--spacing-11);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-background-a80);
+  backdrop-filter: blur(2px);
+
+  font-family: 'Cormorant Unicase', serif;
+  z-index: 1;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  right: -24px;
+  top: 50%;
+  transform: translate(0, -50%);
+}

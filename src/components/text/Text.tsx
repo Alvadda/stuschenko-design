@@ -13,6 +13,13 @@ interface Props {
 function Text({ type = 'p', color = 'dark', textAlign = 'start', children }: Props) {
   const textColor = color === 'dark' ? style.textDark : style.textLight
 
+  if (type === 'h1')
+    return (
+      <h2 className={combineClassNames([style.h1, textColor])} style={{ textAlign }}>
+        {children}
+      </h2>
+    )
+
   if (type === 'h2')
     return (
       <h2 className={combineClassNames([style.h2, textColor])} style={{ textAlign }}>

@@ -1,38 +1,19 @@
 import React from 'react'
 
-import { ReactComponent as Logo } from '../../assets/logoSmall.svg'
-import { PageType, usePageContext } from '../../contexts/PageContext'
-import { combineClassNames } from '../../utils/utils'
-import style from './header.module.css'
+import { useWindowSize } from '../../hooks/useWindowSize'
+import HeaderMobile from './HeaderMobile'
+import HeaderWeb from './HeaderWeb'
 
 function Header() {
-  const { page } = usePageContext()
+  const { width } = useWindowSize()
 
-  const getPageActiveClass = (pageHeading: PageType) => {
-    return page === pageHeading ? style.activNavLink : ''
+  const isMobile = width < 1000
+
+  if (isMobile) {
+    return <HeaderMobile />
   }
 
-  return (
-    <header className={style.container}>
-      <div className={style.heading}>
-        <Logo />
-        <p className={style.title}>Johanna Stuschenko</p>
-      </div>
-      <nav className={style.navigationContainer}>
-        <ul className={style.navigation}>
-          <li className={combineClassNames([style.navigationItem, getPageActiveClass('about')])}>
-            <a href="#about">About</a>
-          </li>
-          <li className={combineClassNames([style.navigationItem, getPageActiveClass('portfolio')])}>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li className={combineClassNames([style.navigationItem, getPageActiveClass('contact')])}>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  )
+  return <HeaderWeb />
 }
 
 export default Header
